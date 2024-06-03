@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sazzad Hossain - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
+
+    /* Header */
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 20px;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(51, 51, 51, 0.9);
+      padding: 10px 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    /* About */
+    #about {
+      background-color: #007bff;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    #about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    #about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Resume */
+    #resume {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .resume-item {
+      margin-bottom: 40px;
+    }
+    .resume-item:last-child {
+      margin-bottom: 0;
+    }
+    .resume-item .date {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .resume-item h3 {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    .resume-item p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+    }
+    footer p {
+      margin: 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Scroll to top button */
+    .scroll-top {
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      background-color: #007bff;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+    }
+    .scroll-top:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="container">
+    <h1>Sazzad Hossain</h1>
+    <p>Technical Support Specialist</p>
+  </div>
+</header>
+
+<div id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Proficient in providing phone-based and on-site technical support, ensuring swift resolution of issues and delivering exceptional customer service. Highly organized, detail-oriented, and adept at multitasking effectively in a fast-paced environment. Demonstrated expertise in troubleshooting, debugging, and strong documentation skills. Previous experience as a Desktop support specialist for 3 years, with knowledge of remote support. Experienced in operating service tickets from call and have knowledge in software and hardware solutions. Previous experience in working with software vendors and Infrastructure Network.</p>
+  </div>
+</div>
+
+<div id="resume">
+  <div class="container">
+    <h2>Resume</h2>
+    <div class="resume-item">
+      <div class="date">August 
+
+<div class="resume-item">
+      <div class="date">November 2019 – July 2020</div>
+      <h3>Software Developer</h3>
+      <p><strong>Company:</strong> MGH Group</p>
+      <p>Developed web applications using Python and Java for clients hosted on Azure Cloud Services. Conducted manual testing and troubleshooting of web applications. Supported product improvements that enhanced customer experience.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Sazzad Hossain. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="scroll-top" onclick="scrollToTop()">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector('.scroll-top').style.display = "block";
+    } else {
+      document.querySelector('.scroll-top').style.display = "none";
+    }
+  }
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</body>
+</html>
